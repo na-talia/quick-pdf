@@ -18,7 +18,7 @@ export const PdfGeneration: FC<PdfGenerationProps> = ({
         <span className="font-semibold">{generatedFileName}</span>
       </p>
       <a href={downloadLink} download={generatedFileName}>
-        <button className="bg-green-500 text-white px-4 py-2 mt-2">
+        <button className="bg-green-400 hover:bg-green-500 text-white px-4 py-2 mt-2 rounded">
           Download File
         </button>
       </a>

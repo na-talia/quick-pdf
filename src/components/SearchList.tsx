@@ -72,7 +72,7 @@ export const SearchList: FC<SearchListProps> = ({
 
   return searchList.length > 0 ? (
     <div className="w-full max-w-xl px-4 py-4 mt-5">
-      <h2 className="text-2xl font-bold underline mb-1">
+      <h2 className="text-2xl font-bold mb-1">
         Your previously generated files:
       </h2>
       <ul>
@@ -83,14 +83,14 @@ export const SearchList: FC<SearchListProps> = ({
           >
             <Button
               type="button"
-              className="bg-blue-500 text-white px-4 py-2 mr-4"
+              className="bg-gray-200 hover:bg-gray-300 rounded px-4 py-2 mr-4"
               onClick={() => handleCurrentResult(text, url, fileName)}
             >
               {fileName}
             </Button>
             <Button
               type="button"
-              className="bg-red-500 text-white px-4 py-2"
+              className="border-2 border-red-500 hover:bg-red-500 hover:text-white px-4 py-2 rounded"
               onClick={() => removeSingleResult(url)}
             >
               Delete
@@ -100,7 +100,7 @@ export const SearchList: FC<SearchListProps> = ({
       </ul>
       <button
         onClick={clearAllResults}
-        className="bg-red-500 text-white px-4 py-2 mt-2 w-full"
+        className="bg-red-400 hover:bg-red-500 text-white px-4 py-2 mt-2 w-full rounded"
       >
         Clear all results
       </button>

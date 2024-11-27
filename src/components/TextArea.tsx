@@ -21,6 +21,7 @@ export const TextArea: FC = () => {
           )}
           rows={8}
           name="pdfText"
+          placeholder="Type your text to convert to PDF"
         />
       </Field>
     </div>

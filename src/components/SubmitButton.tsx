@@ -10,9 +10,9 @@ export const SubmitButton: FC = () => {
           <button
             className={clsx(
               "rounded py-2 my-4 px-4 text-sm text-white",
-              !hover && !active && "bg-sky-600",
-              hover && !active && "bg-sky-500",
-              active && "bg-sky-700"
+              !hover && !active && "bg-blue-500",
+              hover && !active && "bg-blue-600",
+              active && "bg-blue-700"
             )}
           >
             Convert to PDF

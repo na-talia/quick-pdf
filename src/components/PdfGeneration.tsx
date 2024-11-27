@@ -12,7 +12,7 @@ export const PdfGeneration: FC<PdfGenerationProps> = ({
   if (!downloadLink || !generatedFileName) return null;
 
   return (
-    <div className="mt-4">
+    <div className="mt-4 mx-4">
       <p>
         File has been created:{" "}
         <span className="font-semibold">{generatedFileName}</span>

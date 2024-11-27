@@ -18,12 +18,12 @@ export const FileUpload: FC<FileUploadProps> = ({
       {!fileName || isFileProcessed ? (
         <label
           htmlFor="file-upload"
-          className="bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
+          className="bg-yellow-500 text-white mx-4 px-4 py-2 rounded cursor-pointer"
         >
           Choose File
         </label>
       ) : (
-        <span className="text-gray-700">File: {fileName}</span>
+        <span className="text-gray-700 mx-4">File: {fileName}</span>
       )}
 
       <input

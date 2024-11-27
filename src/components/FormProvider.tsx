@@ -2,6 +2,7 @@ import { FC, ReactNode } from "react";
 import { useFileHandling } from "./hooks/useFileHandling";
 import { FileUpload } from "./FileUpload";
 import { PdfGeneration } from "./PdfGeneration";
+import { SubmitButton } from "./SubmitButton";
 
 interface FormProviderProps {
   setURL: (value: string) => void;
@@ -35,6 +36,7 @@ export const FormProvider: FC<FormProviderProps> = ({
           fileInputRef={fileInputRef}
           handleFileChange={handleFileChange}
         />
+        <SubmitButton />
       </form>
 
       <PdfGeneration

@@ -1,11 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  TextArea,
-  SubmitButton,
-  SearchList,
-  FormProvider,
-  PDFViewer,
-} from "./components";
+import { TextArea, SearchList, FormProvider, PDFViewer } from "./components";
 import { UseStateResult } from "./types/use-state-return-type";
 import { RESULTS } from "./constants/results";
 
@@ -36,7 +30,6 @@ function App(): JSX.Element {
         updateSearchList={updateSearchList}
       >
         <TextArea />
-        <SubmitButton />
       </FormProvider>
 
       {currentPDFUrl && (

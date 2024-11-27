@@ -20,7 +20,7 @@ export const FileUpload: FC<FileUploadProps> = ({
           htmlFor="file-upload"
           className="bg-yellow-500 text-white mx-4 px-4 py-2 rounded cursor-pointer"
         >
-          Choose File
+          Choose a File
         </label>
       ) : (
         <span className="text-gray-700 mx-4">File: {fileName}</span>

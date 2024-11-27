@@ -106,6 +106,6 @@ export const SearchList: FC<SearchListProps> = ({
       </button>
     </div>
   ) : (
-    <p>No saved results</p>
+    <p className="mx-4">No saved results</p>
   );
 };

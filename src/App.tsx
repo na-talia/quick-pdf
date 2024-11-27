@@ -24,26 +24,28 @@ function App(): JSX.Element {
   };
 
   return (
-    <div className="App">
-      <FormProvider
-        setURL={setCurrentPDFUrl}
-        updateSearchList={updateSearchList}
-      >
-        <TextArea />
-      </FormProvider>
+    <div className="flex justify-center items-center min-h-screen p-4">
+      <div className="w-full max-w-4xl">
+        <FormProvider
+          setURL={setCurrentPDFUrl}
+          updateSearchList={updateSearchList}
+        >
+          <TextArea />
+        </FormProvider>
 
-      {currentPDFUrl && (
-        <PDFViewer
-          currentPDFUrl={currentPDFUrl}
-          closeViewer={() => setCurrentPDFUrl("")}
+        {currentPDFUrl && (
+          <PDFViewer
+            currentPDFUrl={currentPDFUrl}
+            closeViewer={() => setCurrentPDFUrl("")}
+          />
+        )}
+
+        <SearchList
+          setURL={setCurrentPDFUrl}
+          searchList={searchList}
+          updateSearchList={updateSearchList}
         />
-      )}
-
-      <SearchList
-        setURL={setCurrentPDFUrl}
-        searchList={searchList}
-        updateSearchList={updateSearchList}
-      />
+      </div>
     </div>
   );
 }

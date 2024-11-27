@@ -6,12 +6,10 @@ export const TextArea: FC = () => {
   return (
     <div className="w-full max-w-xxl px-4 py-4 mt-5">
       <Field>
-        <Label className="block text-lg/6 font-medium mb-2.5">
-          PDF Generator
-        </Label>
+        <Label className="block text-2xl font-bold mb-2.5">PDF Generator</Label>
         <Description className="text-sm/6">
           Type your text and click the 'Convert to PDF' button to create your
-          PDF file, or choose a file to convert.
+          PDF file
         </Description>
 
         <Textarea
@@ -21,6 +19,7 @@ export const TextArea: FC = () => {
           )}
           rows={8}
           name="pdfText"
+          placeholder="Type your text to convert to PDF"
         />
       </Field>
     </div>

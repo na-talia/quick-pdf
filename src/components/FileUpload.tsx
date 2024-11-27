@@ -16,12 +16,17 @@ export const FileUpload: FC<FileUploadProps> = ({
   return (
     <>
       {!fileName || isFileProcessed ? (
-        <label
-          htmlFor="file-upload"
-          className="bg-yellow-500 text-white mx-4 px-4 py-2 rounded cursor-pointer"
-        >
-          Choose a File
-        </label>
+        <>
+          <span className="mx-4 text-sm/6">
+            Or upload a file from your computer to convert it to PDF
+          </span>
+          <label
+            htmlFor="file-upload"
+            className="bg-gray-400 hover:bg-gray-500 text-sm text-white px-4 py-2 rounded cursor-pointer"
+          >
+            Upload a File
+          </label>
+        </>
       ) : (
         <span className="text-gray-700 mx-4">File: {fileName}</span>
       )}
